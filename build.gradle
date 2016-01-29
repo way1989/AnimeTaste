@@ -5,7 +5,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.1.0'
+        classpath 'com.android.tools.build:gradle:1.5.0'
         classpath 'com.jakewharton.sdkmanager:gradle-plugin:0.12.0'
     }
 }
@@ -19,6 +19,7 @@ apply plugin: 'com.android.application'
 
 repositories {
     maven { url 'https://dl.bintray.com/drummer-aidan/maven' }
+	maven { url "https://jitpack.io" }
     mavenCentral()
     mavenLocal()
     jcenter()
@@ -39,11 +40,11 @@ dependencies {
 
 
 ext.compileSdkVersion=21
-ext.buildToolsVersion="21.1.2"
+ext.buildToolsVersion="23.0.2"
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    buildToolsVersion "23.0.2"
 
     lintOptions {  
           abortOnError false
